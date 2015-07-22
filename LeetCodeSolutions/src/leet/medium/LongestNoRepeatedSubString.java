@@ -1,8 +1,8 @@
 package leet.medium;
 
 /**
- * Created by MoonLeo on 2015/7/18.
- * 最长不重复子串
+ * No.3 最长不重复子串
+ * 
  */
 public class LongestNoRepeatedSubString {
 

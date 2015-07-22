@@ -1,7 +1,7 @@
 package leet.medium;
 
 /**
- * 最长回文子串
+ * No.5 最长回文子串
  *
  */
 public class LongestPalindromeSubstring {
