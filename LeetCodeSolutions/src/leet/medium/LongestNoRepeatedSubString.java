@@ -1,4 +1,4 @@
-package leet;
+package leet.medium;
 
 /**
  * Created by MoonLeo on 2015/7/18.
