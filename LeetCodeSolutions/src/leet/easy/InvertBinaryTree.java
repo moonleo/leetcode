@@ -1,5 +1,7 @@
 package leet.easy;
 
+import norm.TreeNode;
+
 /**
  * No.226 颠倒二叉树
  * 
@@ -18,19 +20,5 @@ public class InvertBinaryTree {
 		invertTree(root.left);
 		invertTree(root.right);
 		return root;
-	}
-}
-
-/**
- * 定义二叉树结点
- *
- */
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x) {
-		val = x;
 	}
 }
