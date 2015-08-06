@@ -35,4 +35,31 @@ public class SwapNodesInPairs {
         link.next = q;
         swapRecur(p);
     }
+    
+    /**
+     * 迭代调换两个相邻结点
+     * @param head
+     * @return
+     */
+    public ListNode swapPairs2(ListNode head) {
+        if(null == head || null == head.next)
+            return head;
+        ListNode p = head, q = head.next;
+        p.next = q.next;
+        q.next = p;
+        head = q;
+        ListNode r = p;
+        while(r != null) {
+            p = r.next;
+            if(null == p || null == p.next) {
+                break;
+            } 
+            q = p.next;
+            p.next = q.next;
+            q.next = p;
+            r.next = q;
+            r = p;
+        }
+        return head;
+    }
 }
