@@ -1,5 +1,7 @@
 package leet.easy;
 
+import norm.TreeNode;
+
 /**
  * No.104 Given a binary tree, find its maximum depth.
  * Definition for a binary tree node.
