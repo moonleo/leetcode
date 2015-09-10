@@ -3,6 +3,11 @@ package leet.medium;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * No.229 Majority Element II
+ * Given an integer array of size n, find all elements that appear more than [n/3] times. 
+ * The algorithm should run in linear time and in O(1) space.
+ */
 public class MajorityElementII {
 
 	public static void main(String[] args) {
