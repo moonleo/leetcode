@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * No.273 Integer to English Words
  * Convert a non-negative integer to its english words representation. 
- * Given input is guaranteed to be less than 231 - 1.
+ * Given input is guaranteed to be less than 2^31 - 1.
  */
 public class Integer2EnglishWords {
 
