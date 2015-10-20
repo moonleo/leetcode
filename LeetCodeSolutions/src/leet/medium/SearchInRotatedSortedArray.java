@@ -17,6 +17,34 @@ public class SearchInRotatedSortedArray {
 	
 	
 	public int search(int[] nums, int target) {
+        if(null == nums || 0 == nums.length)
+            return -1;
+        int s = 0, e = nums.length-1;
+        int mid;
+        while(s <= e) {
+            mid = (s + e) >> 1;
+            if(target == nums[mid]) {
+                return mid;
+            }
+            //左边有序
+            if(nums[mid] >= nums[s]) {
+                if(nums[s] <= target && target < nums[mid]) {
+                    e = mid - 1;
+                } else {
+                    s = mid + 1;
+                }
+            } else {
+                if(nums[mid] < target && target <= nums[e]) {
+                    s = mid + 1;
+                } else {
+                    e = mid - 1;
+                }
+            }
+        }
+        return -1;
+    }
+	
+	/*public int search(int[] nums, int target) {
         if(0 == nums.length)
             return -1;
         if(1 == nums.length) 
@@ -39,6 +67,6 @@ public class SearchInRotatedSortedArray {
         		index = findPivot(nums, mid+1, end, target);
         	return index;
         }
-    }
+    }*/
     
 }
