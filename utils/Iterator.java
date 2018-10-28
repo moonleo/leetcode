@@ -1,4 +1,4 @@
-package norm;
+package utils;
 
 public interface Iterator<T> {
 	public T next();

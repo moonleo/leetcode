@@ -1,4 +1,4 @@
-package norm;
+package utils;
 
 /**
  * 定义二叉树结点

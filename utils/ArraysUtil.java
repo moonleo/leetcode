@@ -1,4 +1,4 @@
-package norm;
+package utils;
 
 public class ArraysUtil {
 	public static int[] create(int... args) {
@@ -8,7 +8,7 @@ public class ArraysUtil {
 		}
 		return result;
 	}
-	
+
 	public static void print(int[] array) {
 		for(int i: array) {
 			System.out.print(i+" ");

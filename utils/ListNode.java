@@ -1,4 +1,4 @@
-package norm;
+package utils;
 
 /**
  * Definition for singly linked list
@@ -12,7 +12,7 @@ public class ListNode {
 	public ListNode(int x) {
 		val = x;
 	}
-	
+
 	public static ListNode array2List(int[] array) {
 		ListNode head = new ListNode(array[0]);
 		ListNode temp = head;
@@ -23,7 +23,7 @@ public class ListNode {
 		}
 		return head;
 	}
-	
+
 	public static void display(ListNode head) {
 		ListNode temp = head;
 		if(null == temp) {
